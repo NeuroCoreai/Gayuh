@@ -1,0 +1,271 @@
+/* ==== Reset dan Font ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ==== Variabel Warna ==== */
+:root {
+  --primary-color: #007bff;
+  --bg-dark: #ffffff;
+  --text-dark: #222;
+  --card-bg: #f9f9f9;
+}
+
+body {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ==== Header ==== */
+.main-header {
+  background: #f0f0f0;
+  padding: 20px 0;
+  border-bottom: 2px solid var(--primary-color);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+/* ==== Hero Section ==== */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  color: white;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* ==== Tombol ==== */
+.btn {
+  background: var(--primary-color);
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+/* ==== Section Umum ==== */
+.section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.section h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.section p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 18px;
+}
+
+/* ==== Grid ==== */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  border: 1px solid #ddd;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* ==== Gambar Tentang Kami ==== */
+.about-image {
+  margin-top: 20px;
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* ==== Form ==== */
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* ==== Footer ==== */
+.main-footer {
+  background: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid var(--primary-color);
+  margin-top: 60px;
+}
+
+/* ==== Slider ==== */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  margin: auto;
+  padding: 0 50px; /* biar tombol tidak nempel ke tepi */
+  box-sizing: border-box;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.slider .card {
+  min-width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.slider .card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  font-size: 32px;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.slider-btn:hover {
+  opacity: 1;
+}
+
+.slider-btn.prev {
+  left: 10px;
+}
+
+.slider-btn.next {
+  right: 10px;
+}

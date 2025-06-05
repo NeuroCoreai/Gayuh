@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PSG FC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <h1 class="logo">PSG FC</h1>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#squad">Skuad</a></li>
+          <li><a href="#join">Fans</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero-section">
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="psg.mp4" type="video/mp4">
+        Browser Anda tidak mendukung video.
+      </video>
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h2>Pambajeng Sabda Gayuh FC</h2>
+        <p>Klub elit dari jantung kota Kediri. Dukung dan bergabunglah bersama kami!</p>
+        <a href="#join" class="btn">Gabung Fans</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h3>Tentang Klub</h3>
+        <p>Didirikan tahun 1999, PSG menjadi klub dominan di Jawa Timur dan memiliki basis fans Nasional dengan pemain-pemain top Indonesia.</p>
+        <img src="psg.png" alt="Tim PSG" class="about-image" />
+      </div>
+    </section>
+
+    <section id="squad" class="section">
+  <div class="container">
+    <h3>Skuad Utama</h3>
+    <div class="slider-container">
+      <button class="slider-btn prev">&#10094;</button>
+      <div class="slider" id="playerSlider">
+        <div class="card">
+          <img src="maul.png" alt="Kylian Mbappé">
+          <h4>Maulana Alfreda</h4>
+          <p>Penyerang cepat dan mematikan.</p>
+        </div>
+        <div class="card">
+          <img src="petruk.jpg" alt="Ousmane Dembélé">
+          <h4>Alifian Petruk</h4>
+          <p>Winger kreatif penuh skill.</p>
+        </div>
+        <div class="card">
+          <img src="naden.jpg" alt="Gianluigi Donnarumma">
+          <h4>Nadendra Simbal</h4>
+          <p>Penjaga gawang terbaik Indonesia.</p>
+        </div>
+      </div>
+      <button class="slider-btn next">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+    <section id="join" class="section">
+      <div class="container">
+        <h3>Gabung Komunitas Fans</h3>
+        <form id="formJoin">
+          <input type="text" placeholder="Nama Lengkap" required>
+          <input type="email" placeholder="Email" required>
+          <button type="submit" class="btn">Gabung</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; 2025 PSG FC. Semua hak cipta dilindungi.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
